@@ -1,0 +1,73 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+  {
+  float miles;
+  cout << "Enter distance in miles:";
+  cin >> miles;
+  float kilometers = miles *1.6;
+  cout << " You have " << kilometers << " " << "kilometers" << endl;
+  cout << endl;
+  }
+    {
+    float kilometers, meters, centimeters, millimeters;
+    cout << "Enter kilometers:";
+    cin >> kilometers;
+    meters = kilometers*1000;
+    cout << " You have " << meters << " " << "meters" << endl;
+    cout << endl;
+    cout << "Enter meters:";
+    cin >> meters;
+    centimeters = meters*100;
+    cout << " You have " << centimeters << " " << "centimeters" << endl;
+    cout << endl;
+    cout << "Enter meters:";
+    cin >> meters;
+    millimeters = meters*1000;
+    cout << " You have " << millimeters << " " << "millimeters" << endl;
+    cout << endl;
+    }
+    {
+        float fahrenheit, celsius;
+        cout << "Enter degrees celsius:";
+        cin >> celsius;
+        fahrenheit = (9/5) * celsius + 32;
+        cout << fahrenheit << " " << "degrees fahrenheit" << endl;
+        cout << endl;
+    }
+    {
+        float circumference, radius;
+        float PI = 3.14;
+        cout << "Enter radius to find circumference of a circle: ";
+        cin >> radius;
+        circumference = 2 * PI * radius;
+        cout << circumference << " " << endl;
+        cout << endl;
+    }
+    {
+        cout << "*    *" << endl;
+        cout << " *  * " << endl;
+        cout << " *  * " << endl;
+        cout << " *  * " << endl;
+        cout << " *  * " << endl;
+        cout << "  **  " << endl;
+        cout << endl;
+    }
+    {
+        float years, months;
+        double days, hours, minutes, seconds;
+        cout << "Enter your age: ";
+        cin >> years;
+        months = years * 12;
+        cout << "Age in months: " << months << endl;
+        days = years * 365.25;
+        cout << "Age in days: " << days << endl;
+        hours = days * 24;
+        cout << "Age in hours: " << hours << endl;
+        minutes = hours * 60;
+        cout << "Age in minutes: " << minutes << endl;
+        seconds = minutes * 60;
+        cout << "Age in seconds: " << seconds << endl;
+        cout << endl;  
+    }
