@@ -2,41 +2,98 @@
 
 
 /***********************************************
-* Name: Takeshwari Kamal
-* Email: kamalt4@students.rowan.edu
+* Name: Avery Armstead
+* Email: armsteada8@students.rowan.edu
 ***********************************************
-* Purpose:
-*  This program calculates area of circle
+* Purpose: Project 1
 ***********************************************/
 
 #include <iostream>
-
+#include <string>
 using namespace std; 
 
-const  float PI = 3.14159;
-
 int main()
+// #1
 {
+    int r,c;
+    for (r=1; r<=3; r++)
+    {
+    for (c=1; c<=5; c++)
+    {
+        cout<<r;
+    }
+        cout<<endl;
+    }
+}
 
-	float radius, area, circumference;
-	
-	//Display purpose of the program
-	cout << " ******************************************"<<endl;
-	cout << " This program takes in radius to compute area of circle" <<endl;
-	cout << " ******************************************\n\n";
-	
-	//Get user input
-	cout << "Please input radius: ";
-	cin >> radius;
-	
-	//Compute area to PI*radius*radius
-	area = PI* radius *radius; 
-	
-	//Display the area 
-	cout << " The area is = " << area << "\n\n";
-	cout << "Program has ended"<<endl;
+//#2
+{
+    int r,c;
+    for (r=1; r<=3; r++)
+    {
+    for (c=1; c<=5; c++)
+    {
+        cout<<c;
+    }
+        cout<<endl;
+    }
+}
 
-	system("pause");
-	
+//#3
+{
+    int r,c;
+    for (r=1; r<=6; r++)
+    {
+    for (c=1; c<=5; c++)
+    {
+        cout<<c;
+    }
+        cout<<endl;
+    }
+}
+
+//#5
+{
+	int minutes, startTime;
+	string Day; 
+	double cost, rate;
+	{
+		cout << "Enter military time of the call: ";
+		cin >> startTime;
+		while(startTime < 0 || startTime >= 2400)
+		{
+			cout << "Invalid";
+			cout << "Enter military time of the call: ";
+			cin >> startTime;
+		}
+		cout << "Enter length of the call in minutes: ";
+		cin >> minutes;
+		cout << "Enter the day of the week: ";
+		cin >> Day;
+		if(Day == "monday" || "m" 
+		|| Day == "tuesday" || Day == "t"  
+		|| Day =="wednesday" || Day == "w" 
+		|| Day =="thursday" || Day == "r"
+		|| Day == "friday" || Day =="f")
+		{ 
+			if (startTime >= 800 && startTime <= 1800) 
+				rate = 0.4; 
+			else 
+				rate = 0.25;
+			cost = minutes * rate;
+			cout << "Rate for the call was " << " " << rate << " a minute"<< endl
+				<< "Your total cost: " << " " << cost << endl;
+		}
+		else if(Day =="saturday" || Day =="s" || Day =="sunday" || Day =="u")
+		{
+			rate = 0.15;
+			cost = minutes * rate;
+			cout << "Rate for the call was " << " " << rate << " a minute"<< endl
+				<< "Your total cost: " << " " << cost;
+		}
+		else
+			cout << "Invalid." << endl;
+
 	return 0;
+}
 }
