@@ -7,7 +7,7 @@
 ***********************************************
 * Purpose: Project 1
 ***********************************************/
-
+//3 continued
 #include <iostream>
 #include <string>
 using namespace std; 
@@ -96,4 +96,33 @@ int main()
 
 	return 0;
 }
+}
+*************************************************************************************************
+//Assignment1
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+  double mpg, gallons, miles;
+  char redo;
+  double MPG = 0.264179;
+  
+  do
+  {
+  cout << "Enter number of miles traveled: ";
+  cin >> miles;
+  cout << "Enter amount of gas in liters: ";
+  cin >> gallons;
+  
+  mpg = miles / (gallons*MPG);
+  
+  cout << "The amount of gas milage used is " << mpg << endl;
+  
+  cout << "Would you like to redo? (yes=1, no=0) ";
+  cin >> redo;
+  
+ }while (redo == '1');
+return 0;
 }
