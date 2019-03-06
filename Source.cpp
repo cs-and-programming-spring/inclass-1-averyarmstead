@@ -104,6 +104,7 @@ int main()
 using namespace std;
 
 int main()
+//#1
 {
   double mpg, gallons, miles;
   char redo;
@@ -124,5 +125,29 @@ int main()
   cin >> redo;
   
  }while (redo == '1');
-return 0;
+	return 0,
 }
+//2
+{ 
+int num, n, i, x;
+
+    cout << "Enter a prime number less than 10000: ";
+    cin >> n;
+    
+        for ( num=2; num<=n ; num++ )
+        {
+            x=0;
+            
+                for ( i=2; i<=num/2; i++)
+            {
+            if( num%i == 0)
+            {
+                x++;
+                break;
+            }
+        }
+        if(x==0 && num!= 1)
+        
+            cout << num << " ";
+    }
+            }
