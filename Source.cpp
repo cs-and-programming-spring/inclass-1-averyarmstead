@@ -127,7 +127,7 @@ int main()
  }while (redo == '1');
 	return 0,
 }
-//2
+//#2
 { 
 int num, n, i, x;
 
@@ -151,3 +151,29 @@ int num, n, i, x;
             cout << num << " ";
     }
             }
+//#3
+{ 
+int n, i, f1 = 0, f2 = 1, nextF = 0;
+
+cout << "Enter integer for the fibonicca sequence: ";
+cin >> n;
+
+for ( i = 1; i <= n; ++i)
+{
+    if (i == 1)
+    {
+    cout << " " << f1;
+    continue;
+}
+if (i == 2)
+{
+    cout << f2 << " ";
+    continue;
+}
+    nextF = f1 + f2;
+     f1 = f2;
+    f2 = nextF;
+ 
+    cout << nextF << " ";
+}
+}
