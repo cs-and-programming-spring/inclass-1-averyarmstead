@@ -163,12 +163,10 @@ for ( i = 1; i <= n; ++i)
     if (i == 1)
     {
     cout << " " << f1;
-    continue;
 }
 if (i == 2)
 {
     cout << f2 << " ";
-    continue;
 }
     nextF = f1 + f2;
      f1 = f2;
