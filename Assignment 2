@@ -1,0 +1,76 @@
+********************************
+/*
+Avery Armstead
+Assignment 2
+*/
+********************************
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void add();
+void names();
+void namesAndGrades();
+
+int size;
+int nextIndex = 0;
+Students students[];
+
+
+int main() {
+    cout << "Enter class size: ";
+    cin >> size;
+    int input;
+    bool exit = false;
+    while(!exit) {
+        cout << "[1] add student \n[2] view names\n[3] view names & grades\n[4] exit" << endl;
+        cin >> input;
+        switch(input) {
+            case 1: add();
+                break;
+            case 2: names();
+                break;
+            case 3: namesAndGrades();
+                break;
+            case 4: exit = true;
+            default: cout << "invalid input" << endl;
+        }
+    }
+}
+
+void add() {
+    string name;
+    float grade;
+    
+    cout << "Input student name: ";
+    cin >> name;
+    
+    cout << "Input student grade: ";
+    cin >> grade;
+
+    students[nextIndex].grade = grade;
+    students[nextIndex].name = name;
+    nextIndex++;
+}
+
+void names() {
+    cout << "Students:" << endl;
+    for(int i = 0; i < students.length; i++) {
+        cout << students[i].name;
+    }
+}
+
+void namesAndGrades() {
+    cout << "Gradebook:" << endl;
+    for(int i = 0; i < students.length; i++) {
+        cout << students[i].name + '\t' + students[i].grade << endl;    
+    }
+
+}
+
+typedef struct  {
+    float grade,
+    string name
+    Student;
+}
